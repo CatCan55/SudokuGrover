@@ -19,6 +19,10 @@ Each time a permutation agrees with the non-empty slots in the given constraint,
 
 The marker will mark the possible solutions with a phase change of -1.
 
+## Acknowledgments
+
+I thank the Erdős Institute's Quantum Computing Bootcamp, under which this program was created.  
+
 The diffuser will amplify the probability of solutions that are possible.
 
 The outcome will be the solution in binary for the empty qubits, read right to left.
