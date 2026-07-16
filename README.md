@@ -23,6 +23,6 @@ The outcome will be the solution in binary for the empty qubits, read right to l
 
 For emp number of empty slots, it will take about ~pi/4 * 2^{2*emp/2} iterations. For example if emp=3, this is about 6.
 
-## Acknowledgments
+## Acknowledgements
 
 I thank the Erdős Institute's Quantum Computing Bootcamp, under which this program was created.  
