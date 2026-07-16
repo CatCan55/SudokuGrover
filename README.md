@@ -17,14 +17,12 @@ Enumerate going across each row, left to right. Then each column, then each bloc
 
 Each time a permutation agrees with the non-empty slots in the given constraint, add that to the list of possible configurations for the constraint. Then check for the qubit slots that are 0 in the possible configuration, and apply the NOT gate. Then apply the multi-controlled NOT gate to switch the ancilla corresponding to that constraint precisely when all controls corresponding to the empty qubits in the given constraint, are 1.
 
-The marker will mark the possible solutions with a phase change of -1.
-
-## Acknowledgments
-
-I thank the Erdős Institute's Quantum Computing Bootcamp, under which this program was created.  
-
-The diffuser will amplify the probability of solutions that are possible.
+The marker will mark the possible solutions by flipping the ancillas accordingly. The diffuser will amplify the probability of solutions that are possible with a phase change of -1.
 
 The outcome will be the solution in binary for the empty qubits, read right to left.
 
 For emp number of empty slots, it will take about ~pi/4 * 2^{2*emp/2} iterations. For example if emp=3, this is about 6.
+
+## Acknowledgments
+
+I thank the Erdős Institute's Quantum Computing Bootcamp, under which this program was created.  
